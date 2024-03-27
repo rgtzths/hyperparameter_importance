@@ -1,0 +1,9 @@
+datasets
+pandas
+scikit-learn
+scikeras
+keras-tuner
+nltk
+textblob
+scikit-image
+opencv-python

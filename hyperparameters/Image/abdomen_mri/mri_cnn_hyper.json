@@ -1,0 +1,26 @@
+{
+    "dimension": 2,
+    "n_conv_layers" : [1, 4, 1],
+    "n_kernels": [8, 64, 8],
+    "kernel_size" : [3, 9, 2],
+    "pool_size" : [3, 9, 2],
+    "conv_activation_fn": ["relu", "sigmoid", "tanh", "leaky_relu", "swish"],
+    "conv_dropout": [0, 0.8, 0.1],
+    
+    "n_dense_layers": [1, 4, 1],
+    "n_dense_nodes":[64, 1024, 64],
+    "dense_activation_fn":["relu", "sigmoid", "tanh", "leaky_relu", "swish"],
+    "dense_dropout": [0, 0.8, 0.1],
+    
+    "batch_size":[64, 8096, 124],
+    "lr": [0.00001, 0.3, 0.00003],
+    "optimizer": ["Adam", "SGD", "RMSprop", "Adadelta", "Adagrad", "Adamax", "Nadam", "Ftrl"],
+    "loss":["mean_squared_error", "mean_absolute_error", "mean_absolute_percentage_error", "mean_squared_logarithmic_error"],
+
+    "n_outputs": 4,
+    "epochs": 200,
+    "model": "cnn",
+    "dataset" : "mri",
+    "input_shape" : [640, 640, 3],
+    "n_searches" : 100
+}

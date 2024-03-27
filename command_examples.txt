@@ -1,0 +1,3 @@
+
+# Running dense model
+python code/run.py --hyper hyperparameters/Tabular/Abalone/
