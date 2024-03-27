@@ -101,7 +101,6 @@ for dataset in datasets["All Datasets"]:
             results["loss"] = le.fit_transform(results["loss"])
             results["optimizer"] = le.fit_transform(results["optimizer"])
             results["dense_activation"] = le.fit_transform(results["dense_activation"])
-            results["learning_rate"] = le.fit_transform(results["learning_rate"])
 
             if model_name == "CNNModel":
                 results["conv_activation"] = le.fit_transform(results["conv_activation"])
